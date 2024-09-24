@@ -4,8 +4,148 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Admin Dashboard</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CSS Stylesheet -->
     <link rel="stylesheet" href="styles.css" />
-    <script src="script.js"></script>
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <h1 class="branding">Dashboard</h1>
+        <nav class="navigation">
+          <a href="#" class="nav-link"
+            ><img src="icons/home.svg" alt="Home" class="icon" />Home</a
+          >
+          <a href="#" class="nav-link"
+            ><img
+              src="icons/profile.svg"
+              alt="Profile"
+              class="icon"
+            />Profile</a
+          >
+          <a href="#" class="nav-link"
+            ><img
+              src="icons/messages.svg"
+              alt="Messages"
+              class="icon"
+            />Messages</a
+          >
+          <a href="#" class="nav-link"
+            ><img
+              src="icons/history.svg"
+              alt="History"
+              class="icon"
+            />History</a
+          >
+          <a href="#" class="nav-link"
+            ><img src="icons/tasks.svg" alt="Tasks" class="icon" />Tasks</a
+          >
+          <a href="#" class="nav-link"
+            ><img
+              src="icons/communities.svg"
+              alt="Communities"
+              class="icon"
+            />Communities</a
+          >
+          <a href="#" class="nav-link"
+            ><img
+              src="icons/settings.svg"
+              alt="Settings"
+              class="icon"
+            />Settings</a
+          >
+          <a href="#" class="nav-link"
+            ><img
+              src="icons/support.svg"
+              alt="Support"
+              class="icon"
+            />Support</a
+          >
+          <a href="#" class="nav-link"
+            ><img
+              src="icons/privacy.svg"
+              alt="Privacy"
+              class="icon"
+            />Privacy</a
+          >
+        </nav>
+      </aside>
+
+      <!-- Main Area -->
+      <div class="main">
+        <!-- Header -->
+        <header class="header">
+          <input type="text" class="search-bar" placeholder="Search..." />
+          <div class="user-info">
+            <img
+              src="icons/notification.svg"
+              alt="Notifications"
+              class="icon"
+            />
+            <img src="icons/user-avatar.svg" alt="User Avatar" class="avatar" />
+            <span>Morgan Oakley</span>
+          </div>
+        </header>
+
+        <!-- Content Area -->
+        <div class="content">
+          <!-- Projects -->
+          <section class="projects">
+            <h2>Your Projects</h2>
+            <div class="project-grid">
+              <!-- Individual Project Cards -->
+              <div class="card">
+                <h3>Super Cool Project</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <div class="card-icons">
+                  <img src="icons/star.svg" alt="Star" />
+                  <img src="icons/view.svg" alt="View" />
+                  <img src="icons/share.svg" alt="Share" />
+                </div>
+              </div>
+              <div class="card">
+                <h3>Less Cool Project</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <div class="card-icons">
+                  <img src="icons/star.svg" alt="Star" />
+                  <img src="icons/view.svg" alt="View" />
+                  <img src="icons/share.svg" alt="Share" />
+                </div>
+              </div>
+              <!-- Add more project cards as needed -->
+            </div>
+          </section>
+
+          <!-- Announcements -->
+          <section class="announcements card">
+            <h2>Announcements</h2>
+            <ul>
+              <li><strong>Site Maintenance:</strong> Vestibulum lorem.</li>
+              <li><strong>Community Share Day:</strong> Nam vel lectus.</li>
+              <li>
+                <strong>Updated Privacy Policy:</strong> Phasellus efficitur.
+              </li>
+            </ul>
+          </section>
+
+          <!-- Trending -->
+          <section class="trending card">
+            <h2>Trending</h2>
+            <ul>
+              <li>@tegan - World Peace Builder</li>
+              <li>@morgan - Super Cool Project</li>
+              <li>@kendall - Life Changing App</li>
+            </ul>
+          </section>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
