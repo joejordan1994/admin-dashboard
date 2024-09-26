@@ -22,7 +22,56 @@
   --transition-drawer: width 0.4s ease-in;
 }
 
-img {
-  width: 24px;
-  height: 24px;
+body {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-areas:
+    "drawer nav nav nav"
+    "drawer content content content";
+  grid-template-rows: 0.8fr 4fr;
+  grid-template-columns: 5rem 1fr 1fr 1fr;
+}
+
+.drawer {
+  grid-area: drawer;
+  background-color: var(--drawer-color);
+  width: 5rem;
+  position: fixed;
+  transition: var(--transition-drawer);
+  overflow: hidden;
+  height: 100vh;
+}
+
+.drawer:hover {
+  width: var(--drawer-width);
+}
+
+.menuItem > h1 {
+  display: none;
+  margin-left: 5%;
+}
+
+.drawer:hover > .menuItem > h1 {
+  display: inline;
+}
+
+.menuItem {
+  color: var(--text-secondary);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.menuItem > * {
+  cursor: pointer;
+}
+
+.navbar {
+  grid-area: nav;
+}
+
+.content {
+  grid-area: content;
 }
